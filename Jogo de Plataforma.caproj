@@ -311,6 +311,14 @@
             <plugin id="TiledBg" />
             <texture original-source="I:\Meu Drive\2021\Fazendo\CPM\1 Ano\Práticas\Recursos\Tiny Platform Quest Tiles.png" />
         </object-type>
+        <object-type name="gui_right" sid="788039582267602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855461762292937" speed="5">
+                    <frame duration="1" hotspotX="0.516393" hotspotY="0.5" original-source="C:\Users\ederp\Desktop\01.Temp\seta\arrows.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
