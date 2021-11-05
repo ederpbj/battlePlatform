@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Jogo de Plataforma</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>2qpiupr2gjili</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox integer scale</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Fullscreen scaling quality">Low</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use iOS retina display">All devices</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="3206956448522659">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="WebStorage" sid="1510269620771624">
+            <plugin id="WebStorage" />
+        </object-type>
+        <object-type name="Gamepad" sid="996683554706134">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="Keyboard" sid="4436305314906168">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Mouse" sid="3506161195311074">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Touch" sid="2463496682349194">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="2722091819329769">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Browser" sid="3498868852026895">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Text" sid="2985603725420557">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="obj_collision" sid="396096048954196">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="584775818750710">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="158801695131255" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_player" sid="190536610994115">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Estado de animação do jogador" name="player_state" sid="425321975165820" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="419471490799979">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="978301546819275">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="142461794063112">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="ID_IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="264022844606915" speed="5">
+                    <frame duration="1" hotspotX="0.464286" hotspotY="1" original-source="C:\Users\ederp\Google Drive (eder.batista@professor.pb.gov.br)\Sync_Prof_\CPM\1 Ano\Prática\Semana 24\recursos\Tiny Platform Quest Characters.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.0507813" />
+                            <point x="0.915179" y="0.046875" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.464286" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.125" y="0.0507813" />
+                            <point x="0.915179" y="0.046875" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="1" name="ID_WALK" pingpong="0" repeatcount="1" repeatto="0" sid="976059601365444" speed="5">
+                    <frame duration="1" hotspotX="0.423077" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0288462" y="0.0708333" />
+                            <point x="0.956731" y="0.0666667" />
+                            <point x="0.961538" y="1" />
+                            <point x="0.0336538" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.423077" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0288462" y="0.0708333" />
+                            <point x="0.951923" y="0.075" />
+                            <point x="0.961538" y="1" />
+                            <point x="0.0336538" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.392857" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0288462" y="0.0708333" />
+                            <point x="0.93853" y="0.0666667" />
+                            <point x="0.961538" y="1" />
+                            <point x="0.0336538" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.392857" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0288462" y="0.0708333" />
+                            <point x="0.951923" y="0.075" />
+                            <point x="0.961538" y="1" />
+                            <point x="0.0336538" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="ID_JUMP" pingpong="0" repeatcount="1" repeatto="0" sid="786950597242429" speed="5">
+                    <frame duration="1" hotspotX="0.464286" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0546875" />
+                            <point x="0.9375" y="0.0585938" />
+                            <point x="0.959822" y="1" />
+                            <point x="0.0357143" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="ID_FALL" pingpong="0" repeatcount="1" repeatto="0" sid="570121240733859" speed="5">
+                    <frame duration="1" hotspotX="0.464286" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.0580357" y="0.0875" />
+                            <point x="0.964286" y="0.0791667" />
+                            <point x="0.941964" y="1" />
+                            <point x="0.0446429" y="0.9875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_collision_sine" sid="788744151877045">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="436427289161486">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="200422699584872">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743187562609468" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_door" sid="381992364549489">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518815230616236" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_play" sid="930991463680775">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_nome_jogo" sid="263153841205924">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="obj_enemy_1" sid="346396984133595">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="213007779309047">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="ID_IDLE" pingpong="0" repeatcount="1" repeatto="0" sid="823098402996429" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.00390625" y="0.138514" />
+                            <point x="0.996094" y="0.135135" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.00390625" y="0.138514" />
+                            <point x="0.996094" y="0.135135" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_lifes" sid="135362829099987">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_timer" sid="283300193466709">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="item_extra_life" sid="993545225169072">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="761254766256286" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="559847508575392">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="tmp_background" sid="788098345479637">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\ederp\Google Drive (eder.batista@professor.pb.gov.br)\Sync_Prof_\CPM\1 Ano\Prática\Semana 24\recursos\Tiny Platform Quest Tiles.png" />
+            <tiles />
+        </object-type>
+        <object-type name="gui_lifes" sid="312314744323963">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173802612420021" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj_checkpoint" sid="404640213637025">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment=" Identificador do checkpoint" name="ID" sid="244467990177826" type="number" />
+                <instance-variable comment="posição da placa" name="X_Position" sid="589812896046776" type="number" />
+                <instance-variable comment="posição do Y" name="Y_Position" sid="427531776023826" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341431683848109" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\Meu Drive\Fazendo\CPM\1 Ano\Práticas\Recursos\Tiny Platform Quest Tiles.png">
+                        <collision-poly>
+                            <point x="0" y="0.0546875" />
+                            <point x="0.992188" y="0.046875" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.0546875" />
+                            <point x="0.992188" y="0.046875" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tlt_spikes" sid="474571740417657">
+            <plugin id="TiledBg" />
+            <texture original-source="I:\Meu Drive\2021\Fazendo\CPM\1 Ano\Práticas\Recursos\Tiny Platform Quest Tiles.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Game_over.xml</layout>
+        <layout>level_1.xml</layout>
+        <layout>level_2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>event_sheet_game.xml</event-sheet>
+        <event-sheet>event_sheet_menu.xml</event-sheet>
+        <event-sheet>event_sheet_game_over.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="WebStorage" uid="1" />
+        <global-instance type="Gamepad" uid="2">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="6">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="7" />
+        <global-instance type="Function" uid="37" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
